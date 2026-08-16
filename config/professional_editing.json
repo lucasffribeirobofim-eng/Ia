@@ -1,0 +1,41 @@
+{
+  "priority": "QUALIDADE_ACIMA_DE_ECONOMIA",
+  "language": "pt-BR",
+  "default_style": "LIMPO E NATURAL",
+  "final_filename": "final.mp4",
+  "preview_filename": "preview.mp4",
+  "subdirectory": "edit",
+  "required_outputs": [
+    "takes_packed.md",
+    "edl.json",
+    "preview.mp4",
+    "final.mp4",
+    "project.md"
+  ],
+  "forbidden_by_default": [
+    "HyperFrames",
+    "Remotion",
+    "overlays",
+    "animations",
+    "exaggerated_effects",
+    "automatic_zoom"
+  ],
+  "decision_policy": {
+    "ambiguous": "MANTER",
+    "avoid_aggressive_cuts": true,
+    "preserve_natural_breaths": true,
+    "never_cut_inside_words": true
+  },
+  "quality_control": [
+    "duration",
+    "resolution",
+    "fps",
+    "codec",
+    "audio",
+    "audio_video_sync",
+    "subtitle_sync",
+    "corrupt_frames",
+    "openable_video",
+    "ffprobe_check"
+  ]
+}
